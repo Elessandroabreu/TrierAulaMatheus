@@ -1,0 +1,16 @@
+package encapsulamentoTrier;
+
+public class Caixa {
+
+    private double totalCompra;
+
+    public void adicionarCompra(double preco) {
+        if (preco > 0) {
+            totalCompra += preco;
+        }
+    }
+
+    public double getTotalCompra() {
+        return totalCompra;
+    }
+}

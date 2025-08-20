@@ -3,7 +3,7 @@ package BancoDigitalPro;
 class ContaCorrente extends Conta {
     private double limite; // limite especial
 
-    // Construtor
+
     public ContaCorrente(Cliente cliente, int numero, double limite) {
         super(cliente, numero); // chama construtor da classe pai
         this.limite = limite;

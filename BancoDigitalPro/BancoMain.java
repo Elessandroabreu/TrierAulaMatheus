@@ -8,11 +8,11 @@ public class BancoMain {
 
         System.out.println("=== SISTEMA BANCÁRIO ===\n");
 
-        // Criando clientes
+
         Cliente cliente1 = new Cliente("João Silva", "123.456.789-00");
         Cliente cliente2 = new Cliente("Maria Santos", "987.654.321-00");
 
-        // Criando contas
+
         ContaCorrente cc1 = new ContaCorrente(cliente1, 1001, 500.0); // limite R$ 500
         ContaPoupanca cp1 = new ContaPoupanca(cliente2, 2001);
 
@@ -20,7 +20,7 @@ public class BancoMain {
         System.out.println("- Conta Corrente " + cc1.getNumero() + " - " + cliente1.getNome());
         System.out.println("- Conta Poupança " + cp1.getNumero() + " - " + cliente2.getNome());
 
-        // Menu simples
+
         int opcao;
         do {
             System.out.println("\n=== MENU ===");

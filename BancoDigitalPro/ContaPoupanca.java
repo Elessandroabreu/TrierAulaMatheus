@@ -3,12 +3,13 @@ package BancoDigitalPro;
 
 class ContaPoupanca extends Conta {
 
-    // Construtor
+
+
     public ContaPoupanca(Cliente cliente, int numero) {
         super(cliente, numero); // chama construtor da classe pai
     }
 
-    // Sobrescreve o método sacar (só pode sacar se tiver saldo)
+
     @Override
     public boolean sacar(double valor) {
         if (valor > 0 && valor <= saldo && ativa) {
@@ -23,7 +24,7 @@ class ContaPoupanca extends Conta {
         }
     }
 
-    // Método especial da poupança - aplicar rendimento
+
     public void aplicarRendimento() {
         if (saldo > 0) {
             double rendimento = saldo * 0.005; // 0.5% ao mês
